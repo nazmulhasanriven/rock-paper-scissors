@@ -1,5 +1,6 @@
 const options = ["rock", "paper", "scissors"];
-let choices = document.querySelectorAll(".btn");
+const choices = document.querySelectorAll(".btn");
+const result = document.getElementById('result');
 
 function CheckWinner(playerSelection, computerSelection) {
   if (playerSelection == computerSelection) {
@@ -40,5 +41,6 @@ choices.forEach((choise) => choise.addEventListener("click", game));
 function game(e) {
   const computerSelection = getComputerChoice();
   const playerSelection = getPlayerChoice(e);
-  const round = CheckWinner(playerSelection, computerSelection);
+  const round = PlayRound(playerSelection, computerSelection);
+  result.innerText = round;
 }

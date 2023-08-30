@@ -1,3 +1,7 @@
 body{
     background-color: cadetblue;
 }
+
+#result {
+    color: rgb(244, 245, 212);
+}
