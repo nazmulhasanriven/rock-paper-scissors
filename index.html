@@ -1,13 +1,40 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Rock Paper Scissors</title>
-    <script src="app.js"></script>
-    <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Rock Paper Scissors</title>
+
+  <link rel="stylesheet" href="bootstrap.min.css" />
+  <link rel="stylesheet" href="style.css" />
 </head>
+
 <body>
-    
+  <div class="container my-5">
+    <div class="row">
+      <h1 class="text-center">Rock Paper Scissors</h1>
+    </div>
+    <div class="row mt-5 text-center">
+      <div class="col-sm-3 mx-auto">
+        <button id="rock" class="btn btn-lg w-100 btn-primary">Rock</button>
+      </div>
+      <div class="col-sm-3 my-5 my-sm-0 mx-auto">
+        <button id="paper" class="btn btn-lg w-100 btn-danger">Paper</button>
+      </div>
+      <div class="col-sm-3 mx-auto">
+        <button id="scissors" class="btn btn-lg w-100 btn-warning">
+          Scissors
+        </button>
+      </div>
+    </div>
+    <div class="row my-5">
+      <h2 id="result" class="mx-auto text-center"></h2>
+    </div>
+  </div>
+
+  <script src="bootstrap.bundle.min.js"></script>
+  <script src="app.js"></script>
 </body>
+
 </html>
